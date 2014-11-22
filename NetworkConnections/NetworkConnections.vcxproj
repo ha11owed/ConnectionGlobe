@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{0F1EA0CC-8263-46AA-AEA4-7E96A6F8D6A7}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>NetworkConnections</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <LibraryPath>$(SolutionDir)..\marblebin;C:\Qt\Qt5.3.2\5.3\msvc2013\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\Qt\Qt5.3.2\5.3\msvc2013\include;C:\Qt\Qt5.3.2\5.3\msvc2013\include\QtSvg;C:\Qt\Qt5.3.2\5.3\msvc2013\include\QtWidgets;C:\Qt\Qt5.3.2\5.3\msvc2013\include\QtGui;C:\Qt\Qt5.3.2\5.3\msvc2013\include\QtCore;C:\Qt\Qt5.3.2\5.3\msvc2013\mkspecs\win32-msvc2013;C:\Qt\Qt5.3.2\5.3\msvc2013\include\QtANGLE;C:\Qt\Qt5.3.2\5.3\msvc2013\include\QtPrintSupport;C:\Qt\Qt5.3.2\5.3\msvc2013\include\QtNetwork;C:\Qt\Qt5.3.2\5.3\msvc2013\include\QtScript;C:\Qt\Qt5.3.2\5.3\msvc2013\include\QtTest;C:\Qt\Qt5.3.2\5.3\msvc2013\include\QtQml;C:\Qt\Qt5.3.2\5.3\msvc2013\include\QtQuick;D:\workspace-cpp\network-world\marble;D:\workspace-cpp\network-world\marble\src\lib\marble;D:\workspace-cpp\network-world\marble\src\lib\marble\projections;D:\workspace-cpp\network-world\marble\src\lib\marble\geodata;D:\workspace-cpp\network-world\marble\src\lib\marble\geodata\data;D:\workspace-cpp\network-world\marble\src\lib\marble\geodata\graphicsitem;D:\workspace-cpp\network-world\marble\src\lib\marble\geodata\handlers\dgml;D:\workspace-cpp\network-world\marble\src\lib\marble\geodata\parser;D:\workspace-cpp\network-world\marble\src\lib\marble\geodata\writer;D:\workspace-cpp\network-world\marble\src\lib\marble\geodata\scene;D:\workspace-cpp\network-world\marble\src\lib\marble\graphicsview;D:\workspace-cpp\network-world\marblesrc\src;D:\workspace-cpp\network-world\marblesrc\src\lib\marble;D:\workspace-cpp\network-world\marble\src\lib\marble\routing;D:\workspace-cpp\network-world\marble\src\lib\marble\geodata\handlers;D:\workspace-cpp\network-world\marble\src\lib\marble\geodata\handlers\kml;D:\workspace-cpp\network-world\marble\src\lib\marble\layers;D:\workspace-cpp\network-world\marble\src\lib\marble\cloudsync;D:\workspace-cpp\network-world\marble\src\lib\astro;C:\Qt\Qt5.3.2\5.3\msvc2013\include\QtWebKitWidgets;C:\Qt\Qt5.3.2\5.3\msvc2013\include\QtWebKit;C:\Qt\Qt5.3.2\5.3\msvc2013\include\QtXml;C:\Qt\Qt5.3.2\5.3\msvc2013\include\QtConcurrent;$(IncludePath)</IncludePath>
+    <ExecutablePath>$(SolutionDir)..\marblebin;C:\Qt\Qt5.3.2\5.3\msvc2013\bin;$(ExecutablePath)</ExecutablePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <LibraryPath>$(SolutionDir)..\marblebin;C:\Qt\Qt5.3.2\5.3\msvc2013\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\Qt\Qt5.3.2\5.3\msvc2013\include;C:\Qt\Qt5.3.2\5.3\msvc2013\include\QtSvg;C:\Qt\Qt5.3.2\5.3\msvc2013\include\QtWidgets;C:\Qt\Qt5.3.2\5.3\msvc2013\include\QtGui;C:\Qt\Qt5.3.2\5.3\msvc2013\include\QtCore;C:\Qt\Qt5.3.2\5.3\msvc2013\mkspecs\win32-msvc2013;C:\Qt\Qt5.3.2\5.3\msvc2013\include\QtANGLE;C:\Qt\Qt5.3.2\5.3\msvc2013\include\QtPrintSupport;C:\Qt\Qt5.3.2\5.3\msvc2013\include\QtNetwork;C:\Qt\Qt5.3.2\5.3\msvc2013\include\QtScript;C:\Qt\Qt5.3.2\5.3\msvc2013\include\QtTest;C:\Qt\Qt5.3.2\5.3\msvc2013\include\QtQml;C:\Qt\Qt5.3.2\5.3\msvc2013\include\QtQuick;D:\workspace-cpp\network-world\marble;D:\workspace-cpp\network-world\marble\src\lib\marble;D:\workspace-cpp\network-world\marble\src\lib\marble\projections;D:\workspace-cpp\network-world\marble\src\lib\marble\geodata;D:\workspace-cpp\network-world\marble\src\lib\marble\geodata\data;D:\workspace-cpp\network-world\marble\src\lib\marble\geodata\graphicsitem;D:\workspace-cpp\network-world\marble\src\lib\marble\geodata\handlers\dgml;D:\workspace-cpp\network-world\marble\src\lib\marble\geodata\parser;D:\workspace-cpp\network-world\marble\src\lib\marble\geodata\writer;D:\workspace-cpp\network-world\marble\src\lib\marble\geodata\scene;D:\workspace-cpp\network-world\marble\src\lib\marble\graphicsview;D:\workspace-cpp\network-world\marblesrc\src;D:\workspace-cpp\network-world\marblesrc\src\lib\marble;D:\workspace-cpp\network-world\marble\src\lib\marble\routing;D:\workspace-cpp\network-world\marble\src\lib\marble\geodata\handlers;D:\workspace-cpp\network-world\marble\src\lib\marble\geodata\handlers\kml;D:\workspace-cpp\network-world\marble\src\lib\marble\layers;D:\workspace-cpp\network-world\marble\src\lib\marble\cloudsync;D:\workspace-cpp\network-world\marble\src\lib\astro;C:\Qt\Qt5.3.2\5.3\msvc2013\include\QtWebKitWidgets;C:\Qt\Qt5.3.2\5.3\msvc2013\include\QtWebKit;C:\Qt\Qt5.3.2\5.3\msvc2013\include\QtXml;C:\Qt\Qt5.3.2\5.3\msvc2013\include\QtConcurrent;$(IncludePath)</IncludePath>
+    <ExecutablePath>$(SolutionDir)..\marblebin;C:\Qt\Qt5.3.2\5.3\msvc2013\bin;$(ExecutablePath)</ExecutablePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>astrod.lib;marblewidgetd.lib;C:\Qt\Qt5.3.2\5.3\msvc2013\lib\Qt5Cored.lib;C:\Qt\Qt5.3.2\5.3\msvc2013\lib\Qt5Xmld.lib;C:\Qt\Qt5.3.2\5.3\msvc2013\lib\Qt5Widgetsd.lib;C:\Qt\Qt5.3.2\5.3\msvc2013\lib\Qt5WebKitWidgetsd.lib;C:\Qt\Qt5.3.2\5.3\msvc2013\lib\Qt5Svgd.lib;C:\Qt\Qt5.3.2\5.3\msvc2013\lib\Qt5Scriptd.lib;C:\Qt\Qt5.3.2\5.3\msvc2013\lib\Qt5Qmld.lib;C:\Qt\Qt5.3.2\5.3\msvc2013\lib\Qt5Quickd.lib;C:\Qt\Qt5.3.2\5.3\msvc2013\lib\Qt5PrintSupportd.lib;ws2_32.lib;imm32.lib;winmm.lib;C:\Qt\Qt5.3.2\5.3\msvc2013\lib\Qt5WebKitd.lib;C:\Qt\Qt5.3.2\5.3\msvc2013\lib\Qt5Networkd.lib;C:\Qt\Qt5.3.2\5.3\msvc2013\lib\Qt5Guid.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>astro.lib;marblewidget.lib;C:\Qt\Qt5.3.2\5.3\msvc2013\lib\Qt5Core.lib;C:\Qt\Qt5.3.2\5.3\msvc2013\lib\Qt5Xml.lib;C:\Qt\Qt5.3.2\5.3\msvc2013\lib\Qt5Widgets.lib;C:\Qt\Qt5.3.2\5.3\msvc2013\lib\Qt5WebKitWidgets.lib;C:\Qt\Qt5.3.2\5.3\msvc2013\lib\Qt5Svg.lib;C:\Qt\Qt5.3.2\5.3\msvc2013\lib\Qt5Script.lib;C:\Qt\Qt5.3.2\5.3\msvc2013\lib\Qt5Qml.lib;C:\Qt\Qt5.3.2\5.3\msvc2013\lib\Qt5Quick.lib;C:\Qt\Qt5.3.2\5.3\msvc2013\lib\Qt5PrintSupport.lib;ws2_32.lib;imm32.lib;winmm.lib;C:\Qt\Qt5.3.2\5.3\msvc2013\lib\Qt5WebKit.lib;C:\Qt\Qt5.3.2\5.3\msvc2013\lib\Qt5Network.lib;C:\Qt\Qt5.3.2\5.3\msvc2013\lib\Qt5Gui.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="connections.cpp" />
+    <ClCompile Include="GeoIP.c" />
+    <ClCompile Include="GeoIPCity.c" />
+    <ClCompile Include="GeoIP_deprecated.c" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="pread.c" />
+    <ClCompile Include="process.cpp" />
+    <ClCompile Include="regionName.c" />
+    <ClCompile Include="timeZone.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="common.h" />
+    <ClInclude Include="connections.h" />
+    <ClInclude Include="GeoIP.h" />
+    <ClInclude Include="GeoIPCity.h" />
+    <ClInclude Include="GeoIP_internal.h" />
+    <ClInclude Include="pread.h" />
+    <ClInclude Include="process.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
