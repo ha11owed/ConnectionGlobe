@@ -2,6 +2,7 @@ ConnectionGlobe
 ===============
 
 This is a small utility program that displays a globe with the currently active connections.
+![Screenshot](https://github.com/ha11owed/ConnectionGlobe/blob/master/Wiki/networkconnections.jpg)
 
 Releases: [https://github.com/ha11owed/ConnectionGlobe/releases](https://github.com/ha11owed/ConnectionGlobe/releases)
 
